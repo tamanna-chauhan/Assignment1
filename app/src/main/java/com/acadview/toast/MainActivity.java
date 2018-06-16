@@ -12,6 +12,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toast.makeText(this, "This is my Toast in center", Toast.LENGTH_SHORT).show();
+
+        Toast centerToast = Toast.makeText(this, "Center",Toast.LENGTH_SHORT);
+        centerToast.setGravity(Gravity.CENTER, 0 ,0 );
+        centerToast.show();
+    }
+
 
     @Override
     protected void onStart() {
